@@ -20,7 +20,7 @@ namespace VEPO.PL
         public CompraPL(string Fecha)
         {
             InitializeComponent();
-            LlenarDGVcompra();
+            LlenarDGVcompra(Fecha);
             CargarCBO();
             fecha = Fecha;
         }
@@ -51,21 +51,21 @@ namespace VEPO.PL
         {
             compraDAL = new CompraDAL();
             compraDAL.Agregar(ExtraerDatos());
-            LlenarDGVcompra();
+            LlenarDGVcompra(fecha);
         }
 
         private void btn_modificar_esp_Click(object sender, EventArgs e)
         {
             compraDAL = new CompraDAL();
             compraDAL.Modificar(ExtraerDatos());
-            LlenarDGVcompra();
+            LlenarDGVcompra(fecha);
         }
 
         private void btn_borrar_esp_Click(object sender, EventArgs e)
         {
             compraDAL = new CompraDAL();
             compraDAL.Eliminar(ExtraerDatos());
-            LlenarDGVcompra();
+            LlenarDGVcompra(fecha);
         }
         #endregion
 
@@ -74,7 +74,7 @@ namespace VEPO.PL
 
         #region DataGridView
 
-        public void LlenarDGVcompra()
+        public void LlenarDGVcompra(string fecha)
         {
             compraDAL = new CompraDAL();
             try
@@ -89,8 +89,6 @@ namespace VEPO.PL
             {
                 MessageBox.Show(ex.Message, "no hay datos");
             }
-           
-           
 
             LimpiarEntradasEspecie();
             cb_insumo.Focus();

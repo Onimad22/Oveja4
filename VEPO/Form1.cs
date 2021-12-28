@@ -34,7 +34,8 @@ namespace VEPO
 
         private void button6_Click(object sender, EventArgs e)
         {
-            fecha = Fecha.Text;
+            DateTime dtfecha =Fecha.Value;
+            fecha = dtfecha.ToString("yyyy-MM-dd");
             openchildrenform(new CompraPL(fecha));
             Colores();
             button6.BackColor = Color.FromArgb(4, 21, 31);
