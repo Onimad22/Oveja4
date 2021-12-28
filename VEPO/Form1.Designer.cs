@@ -39,9 +39,11 @@ namespace VEPO
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.Fecha = new System.Windows.Forms.DateTimePicker();
             this.p_lateral.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // p_lateral
@@ -190,11 +192,19 @@ namespace VEPO
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(21)))), ((int)(((byte)(31)))));
+            this.panel2.Controls.Add(this.Fecha);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(250, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(698, 708);
             this.panel2.TabIndex = 7;
+            // 
+            // Fecha
+            // 
+            this.Fecha.Location = new System.Drawing.Point(0, 0);
+            this.Fecha.Name = "Fecha";
+            this.Fecha.Size = new System.Drawing.Size(200, 23);
+            this.Fecha.TabIndex = 0;
             // 
             // Form1
             // 
@@ -210,6 +220,7 @@ namespace VEPO
             this.p_lateral.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -225,6 +236,7 @@ namespace VEPO
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DateTimePicker Fecha;
     }
 }
 

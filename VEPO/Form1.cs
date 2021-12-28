@@ -15,13 +15,14 @@ namespace VEPO
 {
     public partial class Form1 : Form
     {
-        
 
+        string fecha;
         public Form1()
         {
             InitializeComponent();
+            
         }
-
+        
         private void button2_Click(object sender, EventArgs e)
         {
             openchildrenform(new InsumoPL());
@@ -33,7 +34,8 @@ namespace VEPO
 
         private void button6_Click(object sender, EventArgs e)
         {
-            openchildrenform(new InsumoPL());
+            fecha = Fecha.Text;
+            openchildrenform(new CompraPL(fecha));
             Colores();
             button6.BackColor = Color.FromArgb(4, 21, 31);
             button6.ForeColor = Color.FromArgb(196, 73, 0);
@@ -57,7 +59,7 @@ namespace VEPO
 
         private void button7_Click(object sender, EventArgs e)
         {
-            openchildrenform(new InsumoPL());
+            openchildrenform(new ProductoPL());
             Colores();
             button7.BackColor = Color.FromArgb(4, 21, 31);
             button7.ForeColor = Color.FromArgb(196, 73, 0);

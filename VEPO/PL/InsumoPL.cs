@@ -29,7 +29,7 @@ namespace VEPO.PL
             lb_id_especie.Text = "0";
         }
 
-        private InsumoBLL DatosInsumo()
+        private InsumoBLL ExtraerDatos()
         {
             insumoBLL = new InsumoBLL();
             insumoBLL.Id_insumo = Convert.ToInt32(lb_id_especie.Text);
@@ -43,21 +43,21 @@ namespace VEPO.PL
         private void btn_agregar_esp_Click(object sender, EventArgs e)
         {
             insumoDAL = new InsumoDAL();
-            insumoDAL.Agregar(DatosInsumo());
+            insumoDAL.Agregar(ExtraerDatos());
             LlenarDGVinsumo();
         }
 
         private void btn_modificar_esp_Click(object sender, EventArgs e)
         {
             insumoDAL = new InsumoDAL();
-            insumoDAL.Modificar(DatosInsumo());
+            insumoDAL.Modificar(ExtraerDatos());
             LlenarDGVinsumo();
         }
 
         private void btn_borrar_esp_Click(object sender, EventArgs e)
         {
             insumoDAL = new InsumoDAL();
-            insumoDAL.Eliminar(DatosInsumo());
+            insumoDAL.Eliminar(ExtraerDatos());
             LlenarDGVinsumo();
         }
         #endregion
