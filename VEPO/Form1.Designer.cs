@@ -30,12 +30,12 @@ namespace VEPO
         private void InitializeComponent()
         {
             this.p_lateral = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_insumo = new System.Windows.Forms.Button();
+            this.btn_producto = new System.Windows.Forms.Button();
+            this.btn_cierre = new System.Windows.Forms.Button();
+            this.btn_personal = new System.Windows.Forms.Button();
+            this.btn_compra = new System.Windows.Forms.Button();
+            this.btn_comanda = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Fecha = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -48,126 +48,126 @@ namespace VEPO
             // p_lateral
             // 
             this.p_lateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(37)))), ((int)(((byte)(52)))));
-            this.p_lateral.Controls.Add(this.button1);
-            this.p_lateral.Controls.Add(this.button7);
-            this.p_lateral.Controls.Add(this.button6);
-            this.p_lateral.Controls.Add(this.button5);
-            this.p_lateral.Controls.Add(this.button4);
-            this.p_lateral.Controls.Add(this.button2);
+            this.p_lateral.Controls.Add(this.btn_insumo);
+            this.p_lateral.Controls.Add(this.btn_producto);
+            this.p_lateral.Controls.Add(this.btn_cierre);
+            this.p_lateral.Controls.Add(this.btn_personal);
+            this.p_lateral.Controls.Add(this.btn_compra);
+            this.p_lateral.Controls.Add(this.btn_comanda);
             this.p_lateral.Controls.Add(this.panel1);
             this.p_lateral.Dock = System.Windows.Forms.DockStyle.Left;
             this.p_lateral.Location = new System.Drawing.Point(0, 0);
             this.p_lateral.Name = "p_lateral";
-            this.p_lateral.Size = new System.Drawing.Size(250, 708);
+            this.p_lateral.Size = new System.Drawing.Size(250, 852);
             this.p_lateral.TabIndex = 6;
             // 
-            // button1
+            // btn_insumo
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(73)))), ((int)(((byte)(0)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(0, 600);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(250, 90);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Insumos";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.btn_insumo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_insumo.FlatAppearance.BorderSize = 0;
+            this.btn_insumo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(73)))), ((int)(((byte)(0)))));
+            this.btn_insumo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_insumo.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_insumo.ForeColor = System.Drawing.Color.White;
+            this.btn_insumo.Location = new System.Drawing.Point(0, 600);
+            this.btn_insumo.Name = "btn_insumo";
+            this.btn_insumo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_insumo.Size = new System.Drawing.Size(250, 90);
+            this.btn_insumo.TabIndex = 9;
+            this.btn_insumo.Text = "Insumos";
+            this.btn_insumo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_insumo.UseVisualStyleBackColor = true;
+            this.btn_insumo.Click += new System.EventHandler(this.btn_insumo_Click);
             // 
-            // button7
+            // btn_producto
             // 
-            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(73)))), ((int)(((byte)(0)))));
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(0, 510);
-            this.button7.Name = "button7";
-            this.button7.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button7.Size = new System.Drawing.Size(250, 90);
-            this.button7.TabIndex = 8;
-            this.button7.Text = "Productos";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.btn_producto.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_producto.FlatAppearance.BorderSize = 0;
+            this.btn_producto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(73)))), ((int)(((byte)(0)))));
+            this.btn_producto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_producto.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_producto.ForeColor = System.Drawing.Color.White;
+            this.btn_producto.Location = new System.Drawing.Point(0, 510);
+            this.btn_producto.Name = "btn_producto";
+            this.btn_producto.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_producto.Size = new System.Drawing.Size(250, 90);
+            this.btn_producto.TabIndex = 8;
+            this.btn_producto.Text = "Productos";
+            this.btn_producto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_producto.UseVisualStyleBackColor = true;
+            this.btn_producto.Click += new System.EventHandler(this.btn_producto_Click);
             // 
-            // button6
+            // btn_cierre
             // 
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(73)))), ((int)(((byte)(0)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(0, 420);
-            this.button6.Name = "button6";
-            this.button6.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button6.Size = new System.Drawing.Size(250, 90);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "Cierre";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.btn_cierre.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_cierre.FlatAppearance.BorderSize = 0;
+            this.btn_cierre.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(73)))), ((int)(((byte)(0)))));
+            this.btn_cierre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cierre.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_cierre.ForeColor = System.Drawing.Color.White;
+            this.btn_cierre.Location = new System.Drawing.Point(0, 420);
+            this.btn_cierre.Name = "btn_cierre";
+            this.btn_cierre.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_cierre.Size = new System.Drawing.Size(250, 90);
+            this.btn_cierre.TabIndex = 7;
+            this.btn_cierre.Text = "Cierre";
+            this.btn_cierre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_cierre.UseVisualStyleBackColor = true;
+            this.btn_cierre.Click += new System.EventHandler(this.btn_cierre_Click);
             // 
-            // button5
+            // btn_personal
             // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(73)))), ((int)(((byte)(0)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(0, 330);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(250, 90);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Personal";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btn_personal.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_personal.FlatAppearance.BorderSize = 0;
+            this.btn_personal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(73)))), ((int)(((byte)(0)))));
+            this.btn_personal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_personal.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_personal.ForeColor = System.Drawing.Color.White;
+            this.btn_personal.Location = new System.Drawing.Point(0, 330);
+            this.btn_personal.Name = "btn_personal";
+            this.btn_personal.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_personal.Size = new System.Drawing.Size(250, 90);
+            this.btn_personal.TabIndex = 6;
+            this.btn_personal.Text = "Personal";
+            this.btn_personal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_personal.UseVisualStyleBackColor = true;
+            this.btn_personal.Click += new System.EventHandler(this.btn_personal_Click);
             // 
-            // button4
+            // btn_compra
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(73)))), ((int)(((byte)(0)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(0, 240);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(250, 90);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Compra";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btn_compra.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_compra.FlatAppearance.BorderSize = 0;
+            this.btn_compra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(73)))), ((int)(((byte)(0)))));
+            this.btn_compra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_compra.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_compra.ForeColor = System.Drawing.Color.White;
+            this.btn_compra.Location = new System.Drawing.Point(0, 240);
+            this.btn_compra.Name = "btn_compra";
+            this.btn_compra.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_compra.Size = new System.Drawing.Size(250, 90);
+            this.btn_compra.TabIndex = 5;
+            this.btn_compra.Text = "Compra";
+            this.btn_compra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_compra.UseVisualStyleBackColor = true;
+            this.btn_compra.Click += new System.EventHandler(this.btn_compra_Click);
             // 
-            // button2
+            // btn_comanda
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(73)))), ((int)(((byte)(0)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(0, 150);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(250, 90);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Comanda";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn_comanda.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_comanda.FlatAppearance.BorderSize = 0;
+            this.btn_comanda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(73)))), ((int)(((byte)(0)))));
+            this.btn_comanda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_comanda.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_comanda.ForeColor = System.Drawing.Color.White;
+            this.btn_comanda.Location = new System.Drawing.Point(0, 150);
+            this.btn_comanda.Name = "btn_comanda";
+            this.btn_comanda.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_comanda.Size = new System.Drawing.Size(250, 90);
+            this.btn_comanda.TabIndex = 3;
+            this.btn_comanda.Text = "Comanda";
+            this.btn_comanda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_comanda.UseVisualStyleBackColor = true;
+            this.btn_comanda.Click += new System.EventHandler(this.btn_comanda_Click);
             // 
             // panel1
             // 
@@ -202,14 +202,14 @@ namespace VEPO
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(250, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(698, 708);
+            this.panel2.Size = new System.Drawing.Size(990, 852);
             this.panel2.TabIndex = 7;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(948, 708);
+            this.ClientSize = new System.Drawing.Size(1240, 852);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.p_lateral);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -225,15 +225,15 @@ namespace VEPO
 
         #endregion
         private System.Windows.Forms.Panel p_lateral;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_producto;
+        private System.Windows.Forms.Button btn_cierre;
+        private System.Windows.Forms.Button btn_personal;
+        private System.Windows.Forms.Button btn_compra;
+        private System.Windows.Forms.Button btn_comanda;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_insumo;
         private System.Windows.Forms.DateTimePicker Fecha;
     }
 }
