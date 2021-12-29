@@ -30,12 +30,15 @@ namespace VEPO
         private void InitializeComponent()
         {
             this.p_lateral = new System.Windows.Forms.Panel();
-            this.btn_insumo = new System.Windows.Forms.Button();
-            this.btn_producto = new System.Windows.Forms.Button();
-            this.btn_cierre = new System.Windows.Forms.Button();
             this.btn_personal = new System.Windows.Forms.Button();
+            this.btn_receta = new System.Windows.Forms.Button();
+            this.btn_insumo = new System.Windows.Forms.Button();
+            this.btn_cierre = new System.Windows.Forms.Button();
+            this.btn_sueldo = new System.Windows.Forms.Button();
+            this.btn_jornal = new System.Windows.Forms.Button();
             this.btn_compra = new System.Windows.Forms.Button();
             this.btn_comanda = new System.Windows.Forms.Button();
+            this.btn_producto = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Fecha = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -48,72 +51,21 @@ namespace VEPO
             // p_lateral
             // 
             this.p_lateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(37)))), ((int)(((byte)(52)))));
-            this.p_lateral.Controls.Add(this.btn_insumo);
-            this.p_lateral.Controls.Add(this.btn_producto);
-            this.p_lateral.Controls.Add(this.btn_cierre);
             this.p_lateral.Controls.Add(this.btn_personal);
+            this.p_lateral.Controls.Add(this.btn_receta);
+            this.p_lateral.Controls.Add(this.btn_producto);
+            this.p_lateral.Controls.Add(this.btn_insumo);
+            this.p_lateral.Controls.Add(this.btn_cierre);
+            this.p_lateral.Controls.Add(this.btn_sueldo);
+            this.p_lateral.Controls.Add(this.btn_jornal);
             this.p_lateral.Controls.Add(this.btn_compra);
             this.p_lateral.Controls.Add(this.btn_comanda);
             this.p_lateral.Controls.Add(this.panel1);
             this.p_lateral.Dock = System.Windows.Forms.DockStyle.Left;
             this.p_lateral.Location = new System.Drawing.Point(0, 0);
             this.p_lateral.Name = "p_lateral";
-            this.p_lateral.Size = new System.Drawing.Size(250, 852);
+            this.p_lateral.Size = new System.Drawing.Size(250, 749);
             this.p_lateral.TabIndex = 6;
-            // 
-            // btn_insumo
-            // 
-            this.btn_insumo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_insumo.FlatAppearance.BorderSize = 0;
-            this.btn_insumo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(73)))), ((int)(((byte)(0)))));
-            this.btn_insumo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_insumo.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_insumo.ForeColor = System.Drawing.Color.White;
-            this.btn_insumo.Location = new System.Drawing.Point(0, 600);
-            this.btn_insumo.Name = "btn_insumo";
-            this.btn_insumo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_insumo.Size = new System.Drawing.Size(250, 90);
-            this.btn_insumo.TabIndex = 9;
-            this.btn_insumo.Text = "Insumos";
-            this.btn_insumo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_insumo.UseVisualStyleBackColor = true;
-            this.btn_insumo.Click += new System.EventHandler(this.btn_insumo_Click);
-            // 
-            // btn_producto
-            // 
-            this.btn_producto.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_producto.FlatAppearance.BorderSize = 0;
-            this.btn_producto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(73)))), ((int)(((byte)(0)))));
-            this.btn_producto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_producto.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_producto.ForeColor = System.Drawing.Color.White;
-            this.btn_producto.Location = new System.Drawing.Point(0, 510);
-            this.btn_producto.Name = "btn_producto";
-            this.btn_producto.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_producto.Size = new System.Drawing.Size(250, 90);
-            this.btn_producto.TabIndex = 8;
-            this.btn_producto.Text = "Productos";
-            this.btn_producto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_producto.UseVisualStyleBackColor = true;
-            this.btn_producto.Click += new System.EventHandler(this.btn_producto_Click);
-            // 
-            // btn_cierre
-            // 
-            this.btn_cierre.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_cierre.FlatAppearance.BorderSize = 0;
-            this.btn_cierre.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(73)))), ((int)(((byte)(0)))));
-            this.btn_cierre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cierre.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_cierre.ForeColor = System.Drawing.Color.White;
-            this.btn_cierre.Location = new System.Drawing.Point(0, 420);
-            this.btn_cierre.Name = "btn_cierre";
-            this.btn_cierre.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_cierre.Size = new System.Drawing.Size(250, 90);
-            this.btn_cierre.TabIndex = 7;
-            this.btn_cierre.Text = "Cierre";
-            this.btn_cierre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_cierre.UseVisualStyleBackColor = true;
-            this.btn_cierre.Click += new System.EventHandler(this.btn_cierre_Click);
             // 
             // btn_personal
             // 
@@ -123,15 +75,105 @@ namespace VEPO
             this.btn_personal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_personal.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_personal.ForeColor = System.Drawing.Color.White;
-            this.btn_personal.Location = new System.Drawing.Point(0, 330);
+            this.btn_personal.Location = new System.Drawing.Point(0, 502);
             this.btn_personal.Name = "btn_personal";
             this.btn_personal.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_personal.Size = new System.Drawing.Size(250, 90);
-            this.btn_personal.TabIndex = 6;
+            this.btn_personal.Size = new System.Drawing.Size(250, 44);
+            this.btn_personal.TabIndex = 12;
             this.btn_personal.Text = "Personal";
             this.btn_personal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_personal.UseVisualStyleBackColor = true;
             this.btn_personal.Click += new System.EventHandler(this.btn_personal_Click);
+            // 
+            // btn_receta
+            // 
+            this.btn_receta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_receta.FlatAppearance.BorderSize = 0;
+            this.btn_receta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(73)))), ((int)(((byte)(0)))));
+            this.btn_receta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_receta.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_receta.ForeColor = System.Drawing.Color.White;
+            this.btn_receta.Location = new System.Drawing.Point(0, 458);
+            this.btn_receta.Name = "btn_receta";
+            this.btn_receta.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_receta.Size = new System.Drawing.Size(250, 44);
+            this.btn_receta.TabIndex = 11;
+            this.btn_receta.Text = "Receta";
+            this.btn_receta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_receta.UseVisualStyleBackColor = true;
+            this.btn_receta.Click += new System.EventHandler(this.btn_receta_Click);
+            // 
+            // btn_insumo
+            // 
+            this.btn_insumo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_insumo.FlatAppearance.BorderSize = 0;
+            this.btn_insumo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(73)))), ((int)(((byte)(0)))));
+            this.btn_insumo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_insumo.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_insumo.ForeColor = System.Drawing.Color.White;
+            this.btn_insumo.Location = new System.Drawing.Point(0, 376);
+            this.btn_insumo.Name = "btn_insumo";
+            this.btn_insumo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_insumo.Size = new System.Drawing.Size(250, 38);
+            this.btn_insumo.TabIndex = 9;
+            this.btn_insumo.Text = "Insumo";
+            this.btn_insumo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_insumo.UseVisualStyleBackColor = true;
+            this.btn_insumo.Click += new System.EventHandler(this.btn_insumo_Click);
+            // 
+            // btn_cierre
+            // 
+            this.btn_cierre.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_cierre.FlatAppearance.BorderSize = 0;
+            this.btn_cierre.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(73)))), ((int)(((byte)(0)))));
+            this.btn_cierre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cierre.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_cierre.ForeColor = System.Drawing.Color.White;
+            this.btn_cierre.Location = new System.Drawing.Point(0, 329);
+            this.btn_cierre.Name = "btn_cierre";
+            this.btn_cierre.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_cierre.Size = new System.Drawing.Size(250, 47);
+            this.btn_cierre.TabIndex = 8;
+            this.btn_cierre.Text = "Cierre";
+            this.btn_cierre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_cierre.UseVisualStyleBackColor = true;
+            this.btn_cierre.Click += new System.EventHandler(this.btn_cierre_Click);
+            // 
+            // btn_sueldo
+            // 
+            this.btn_sueldo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_sueldo.FlatAppearance.BorderSize = 0;
+            this.btn_sueldo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(73)))), ((int)(((byte)(0)))));
+            this.btn_sueldo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_sueldo.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_sueldo.ForeColor = System.Drawing.Color.White;
+            this.btn_sueldo.Location = new System.Drawing.Point(0, 285);
+            this.btn_sueldo.Name = "btn_sueldo";
+            this.btn_sueldo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_sueldo.Size = new System.Drawing.Size(250, 44);
+            this.btn_sueldo.TabIndex = 7;
+            this.btn_sueldo.Text = "Sueldo";
+            this.btn_sueldo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_sueldo.UseVisualStyleBackColor = true;
+            this.btn_sueldo.Click += new System.EventHandler(this.btn_sueldo_Click);
+            // 
+            // btn_jornal
+            // 
+            this.btn_jornal.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_jornal.FlatAppearance.BorderSize = 0;
+            this.btn_jornal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(73)))), ((int)(((byte)(0)))));
+            this.btn_jornal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_jornal.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_jornal.ForeColor = System.Drawing.Color.White;
+            this.btn_jornal.Location = new System.Drawing.Point(0, 238);
+            this.btn_jornal.Name = "btn_jornal";
+            this.btn_jornal.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_jornal.Size = new System.Drawing.Size(250, 47);
+            this.btn_jornal.TabIndex = 6;
+            this.btn_jornal.Text = "Jornal";
+            this.btn_jornal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_jornal.UseVisualStyleBackColor = true;
+            this.btn_jornal.Click += new System.EventHandler(this.btn_jornal_Click);
             // 
             // btn_compra
             // 
@@ -141,10 +183,10 @@ namespace VEPO
             this.btn_compra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_compra.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_compra.ForeColor = System.Drawing.Color.White;
-            this.btn_compra.Location = new System.Drawing.Point(0, 240);
+            this.btn_compra.Location = new System.Drawing.Point(0, 196);
             this.btn_compra.Name = "btn_compra";
             this.btn_compra.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_compra.Size = new System.Drawing.Size(250, 90);
+            this.btn_compra.Size = new System.Drawing.Size(250, 42);
             this.btn_compra.TabIndex = 5;
             this.btn_compra.Text = "Compra";
             this.btn_compra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -162,7 +204,7 @@ namespace VEPO
             this.btn_comanda.Location = new System.Drawing.Point(0, 150);
             this.btn_comanda.Name = "btn_comanda";
             this.btn_comanda.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_comanda.Size = new System.Drawing.Size(250, 90);
+            this.btn_comanda.Size = new System.Drawing.Size(250, 46);
             this.btn_comanda.TabIndex = 3;
             this.btn_comanda.Text = "Comanda";
             this.btn_comanda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -202,14 +244,32 @@ namespace VEPO
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(250, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(990, 852);
+            this.panel2.Size = new System.Drawing.Size(1120, 749);
             this.panel2.TabIndex = 7;
+            // 
+            // btn_producto
+            // 
+            this.btn_producto.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_producto.FlatAppearance.BorderSize = 0;
+            this.btn_producto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(73)))), ((int)(((byte)(0)))));
+            this.btn_producto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_producto.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_producto.ForeColor = System.Drawing.Color.White;
+            this.btn_producto.Location = new System.Drawing.Point(0, 414);
+            this.btn_producto.Name = "btn_producto";
+            this.btn_producto.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_producto.Size = new System.Drawing.Size(250, 44);
+            this.btn_producto.TabIndex = 10;
+            this.btn_producto.Text = "Producto";
+            this.btn_producto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_producto.UseVisualStyleBackColor = true;
+            this.btn_producto.Click += new System.EventHandler(this.btn_producto_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1240, 852);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.p_lateral);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -225,9 +285,9 @@ namespace VEPO
 
         #endregion
         private System.Windows.Forms.Panel p_lateral;
-        private System.Windows.Forms.Button btn_producto;
         private System.Windows.Forms.Button btn_cierre;
-        private System.Windows.Forms.Button btn_personal;
+        private System.Windows.Forms.Button btn_sueldo;
+        private System.Windows.Forms.Button btn_jornal;
         private System.Windows.Forms.Button btn_compra;
         private System.Windows.Forms.Button btn_comanda;
         private System.Windows.Forms.Panel panel1;
@@ -235,6 +295,9 @@ namespace VEPO
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_insumo;
         private System.Windows.Forms.DateTimePicker Fecha;
+        private System.Windows.Forms.Button btn_personal;
+        private System.Windows.Forms.Button btn_receta;
+        private System.Windows.Forms.Button btn_producto;
     }
 }
 

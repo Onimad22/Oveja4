@@ -60,7 +60,7 @@ namespace VEPO.DAL
 
         }
 
-        public DataTable EjecutartDT(SQLiteCommand sqlcomando)
+        public DataTable EjecutarDT(SQLiteCommand sqlcomando)
         {
             DataTable DT = new DataTable();
             SQLiteDataAdapter Adaptador = new SQLiteDataAdapter();

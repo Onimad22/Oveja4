@@ -63,6 +63,8 @@ namespace VEPO.DAL
             return conexion.EjecutarConsulta(comando);
         }
 
+        
+
     }
 
 

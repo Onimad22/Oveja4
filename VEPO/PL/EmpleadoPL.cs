@@ -11,12 +11,12 @@ using VEPO.BLL;
 
 namespace VEPO.PL
 {
-    public partial class InsumoPL : Form
+    public partial class EmpleadoPL : Form
     {
-        InsumoBLL insumoBLL;
-        InsumoDAL insumoDAL;
+        EmpleadoBLL empleadoBLL;
+        EmpleadoDAL empleadoDAL;
 
-        public InsumoPL()
+        public EmpleadoPL()
         {
             InitializeComponent();
             LlenarDGVinsumo();
@@ -24,40 +24,40 @@ namespace VEPO.PL
 
         public void LimpiarEntradas()
         {
-            txt_especie.Text = "";
-            txt_categoria.Text = "";
+            txt_empleado.Text = "";
+            txt_convenio.Text = "";
             lb_id_especie.Text = "0";
         }
 
-        private InsumoBLL ExtraerDatos()
+        private EmpleadoBLL ExtraerDatos()
         {
-            insumoBLL = new InsumoBLL();
-            insumoBLL.Id_insumo = Convert.ToInt32(lb_id_especie.Text);
-            insumoBLL.Nombre_insumo = txt_especie.Text;
-            insumoBLL.Categoria_insumo = txt_categoria.Text;
-            return insumoBLL;
+            empleadoBLL = new EmpleadoBLL();
+            empleadoBLL.Id_empleado = Convert.ToInt32(lb_id_especie.Text);
+            empleadoBLL.Nombre_empleado = txt_empleado.Text;
+            empleadoBLL.Convenio_empleado = Convert.ToDouble(txt_convenio.Text);
+            return empleadoBLL;
         }
 
 
         #region CRUD
         private void btn_agregar_esp_Click(object sender, EventArgs e)
         {
-            insumoDAL = new InsumoDAL();
-            insumoDAL.Agregar(ExtraerDatos());
+            empleadoDAL = new EmpleadoDAL();
+            empleadoDAL.Agregar(ExtraerDatos());
             LlenarDGVinsumo();
         }
 
         private void btn_modificar_esp_Click(object sender, EventArgs e)
         {
-            insumoDAL = new InsumoDAL();
-            insumoDAL.Modificar(ExtraerDatos());
+            empleadoDAL = new EmpleadoDAL();
+            empleadoDAL.Modificar(ExtraerDatos());
             LlenarDGVinsumo();
         }
 
         private void btn_borrar_esp_Click(object sender, EventArgs e)
         {
-            insumoDAL = new InsumoDAL();
-            insumoDAL.Eliminar(ExtraerDatos());
+            empleadoDAL = new EmpleadoDAL();
+            empleadoDAL.Eliminar(ExtraerDatos());
             LlenarDGVinsumo();
         }
         #endregion
@@ -69,16 +69,16 @@ namespace VEPO.PL
 
         public void LlenarDGVinsumo()
         {
-            insumoDAL = new InsumoDAL();
+            empleadoDAL = new EmpleadoDAL();
 
-            dataGridView1.DataSource = insumoDAL.LlenarDGV().Tables[0];
+            dataGridView1.DataSource = empleadoDAL.LlenarDGV().Tables[0];
             dataGridView1.Columns[0].HeaderText = "ID";
             dataGridView1.Columns[1].HeaderText = "Nombre";
-            dataGridView1.Columns[2].HeaderText = "Categoria";
+            dataGridView1.Columns[2].HeaderText = "$/H";
             dataGridView1.Columns[0].Visible = false;
 
             LimpiarEntradas();
-            txt_especie.Focus();
+            txt_empleado.Focus();
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -86,8 +86,8 @@ namespace VEPO.PL
             var row = (sender as DataGridView).CurrentRow;
 
             lb_id_especie.Text = row.Cells[0].Value.ToString();
-            txt_especie.Text = row.Cells[1].Value.ToString();
-            txt_categoria.Text = row.Cells[2].Value.ToString();
+            txt_empleado.Text = row.Cells[1].Value.ToString();
+            txt_convenio.Text = row.Cells[2].Value.ToString();
         }
 
         #endregion

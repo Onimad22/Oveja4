@@ -22,7 +22,7 @@ namespace VEPO.PL
             LlenarDGVinsumo();
         }
 
-        public void LimpiarEntradasEspecie()
+        public void LimpiarEntradas()
         {
             txt_nombre.Text = "";
             txt_local.Text = "";
@@ -92,7 +92,7 @@ namespace VEPO.PL
             dataGridView1.Columns[7].HeaderText = "Categoria";
             dataGridView1.Columns[0].Visible = false;
 
-            LimpiarEntradasEspecie();
+            LimpiarEntradas();
             txt_nombre.Focus();
         }
 

@@ -25,7 +25,7 @@ namespace VEPO.PL
             fecha = Fecha;
         }
 
-        public void LimpiarEntradasEspecie()
+        public void LimpiarEntradas()
         {
             cb_insumo.Text = "";
             txt_categoria.Text = "";
@@ -90,7 +90,7 @@ namespace VEPO.PL
                 MessageBox.Show(ex.Message, "no hay datos");
             }
 
-            LimpiarEntradasEspecie();
+            LimpiarEntradas();
             cb_insumo.Focus();
         }
 

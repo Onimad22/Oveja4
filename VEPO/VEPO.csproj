@@ -23,7 +23,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="PL\JornalPL.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="PL\CompraPL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PL\EmpleadoPL.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="PL\ProductoPL.cs">

@@ -65,6 +65,24 @@ namespace VEPO.DAL
             return conexion.EjecutarConsulta(comando);
         }
 
+        public DataSet LlenarWhereFecha(string fecha)
+        {
+            SQLiteCommand comando = new SQLiteCommand("SELECT Id_jornal,Fecha_jornal,Entrada_jornal,Salida_jornal,Bono_jornal,Total_jornal,Pago_jornal,Id_empleadoJ FROM Jornal Where fecha_jornal ='" + fecha + "'");
+            return conexion.EjecutarConsulta(comando);
+        }
+
+        public DataTable CalcularBono(string fecha)
+        {
+            SQLiteCommand comando = new SQLiteCommand("SELECT Bono_item FROM Item INNER JOIN Comanda ON id_comandaI=Comanda.id_comanda Where fecha_comanda ='" + fecha + "'");
+            return conexion.EjecutarDT(comando);
+        }
+
+        public DataTable CalcularJornal(int id)
+        {
+            SQLiteCommand comando = new SQLiteCommand("SELECT convenio_empleado FROM Empleado Where id_empleado = '" + id + "'");
+            return conexion.EjecutarDT(comando);
+        }
+
     }
 
 
