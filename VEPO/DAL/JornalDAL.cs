@@ -67,7 +67,7 @@ namespace VEPO.DAL
 
         public DataSet LlenarWhereFecha(string fecha)
         {
-            SQLiteCommand comando = new SQLiteCommand("SELECT Id_jornal,Fecha_jornal,Entrada_jornal,Salida_jornal,Bono_jornal,Total_jornal,Pago_jornal,Id_empleadoJ FROM Jornal Where fecha_jornal ='" + fecha + "'");
+            SQLiteCommand comando = new SQLiteCommand("SELECT nombre_empleado,Id_jornal,Fecha_jornal,Entrada_jornal,Salida_jornal,Bono_jornal,Total_jornal,Pago_jornal,Id_empleadoJ FROM Jornal INNER JOIN Empleado ON id_empleadoJ=Empleado.id_empleado Where fecha_jornal ='" + fecha + "'");
             return conexion.EjecutarConsulta(comando);
         }
 

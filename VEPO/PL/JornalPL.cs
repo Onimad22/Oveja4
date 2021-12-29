@@ -108,10 +108,20 @@ namespace VEPO.PL
             try
             {
                 dataGridView1.DataSource = jornalDAL.LlenarWhereFecha(fecha).Tables[0];
-                dataGridView1.Columns[0].HeaderText = "ID";
-                dataGridView1.Columns[1].HeaderText = "Nombre";
-                dataGridView1.Columns[2].HeaderText = "Categoria";
-                dataGridView1.Columns[0].Visible = false;
+                dataGridView1.Columns[0].HeaderText = "Nombre";
+                dataGridView1.Columns[1].HeaderText = "Id";
+                dataGridView1.Columns[2].HeaderText = "Fecha";
+                dataGridView1.Columns[3].HeaderText = "Entrada";
+                dataGridView1.Columns[4].HeaderText = "Salida";
+                dataGridView1.Columns[5].HeaderText = "Bono";
+                dataGridView1.Columns[6].HeaderText = "Total";
+                dataGridView1.Columns[7].HeaderText = "Pago";
+                dataGridView1.Columns[8].HeaderText = "IdEmpleado";
+                dataGridView1.Columns[1].Visible = false;
+                dataGridView1.Columns[2].Visible = false;
+                dataGridView1.Columns[5].Visible = false;
+                dataGridView1.Columns[7].Visible = false;
+                dataGridView1.Columns[8].Visible = false;
             }
             catch (Exception ex)
             {
@@ -126,10 +136,10 @@ namespace VEPO.PL
         {
             var row = (sender as DataGridView).CurrentRow;
 
-            lb_id_compra.Text = row.Cells[0].Value.ToString();
-            cb_insumo.Text = row.Cells[1].Value.ToString();
-            txt_entrada.Text = row.Cells[2].Value.ToString();
-            txt_salida.Text = row.Cells[3].Value.ToString();
+            lb_id_compra.Text = row.Cells[1].Value.ToString();
+            cb_insumo.Text = row.Cells[0].Value.ToString();
+            txt_entrada.Text = row.Cells[3].Value.ToString();
+            txt_salida.Text = row.Cells[4].Value.ToString();
         }
 
         #endregion
