@@ -56,6 +56,45 @@ namespace VEPO.DAL
             return conexion.EjecutarConsulta(comando);
         }
 
+        public DataSet LlenarWhere(int id)
+        {
+            SQLiteCommand comando = new SQLiteCommand("SELECT fecha_sueldo,total_sueldo FROM Sueldo Where id_empleadoS ='" + id + "'");
+            return conexion.EjecutarConsulta(comando);
+        }
+
+        public DataSet LlenarJornal(int id)
+        {
+            SQLiteCommand comando = new SQLiteCommand("SELECT fecha_jornal,entrada_jornal,salida_jornal,total_jornal FROM Jornal Where id_empleadoJ = '" + id + "' AND pago_jornal=false");
+            return conexion.EjecutarConsulta(comando);
+        }
+
+        public DataTable CalcularSueldo(int id)
+        {
+            SQLiteCommand comando = new SQLiteCommand("SELECT total_jornal FROM Jornal Where id_empleadoJ = '" + id + "' AND pago_jornal=false");
+            return conexion.EjecutarDT(comando);
+        }
+
+        public bool ModificarPago(JornalBLL jornal)
+        {
+
+            SQLiteCommand comando = new SQLiteCommand("UPDATE Jornal SET Pago_jornal=@Pago_jornal WHERE Id_jornal=@Id");
+            comando.Parameters.Add("@Id", DbType.Int32).Value = jornal.Id_jornal;
+            comando.Parameters.Add("@Pago_jornal", DbType.Boolean).Value = true;
+            return conexion.EjecutarComando(comando);
+        }
+
+        public DataTable JornalesaPagar(int id)
+        {
+            SQLiteCommand comando = new SQLiteCommand("SELECT id_jornal,pago_jornal FROM Jornal Where id_empleadoJ = '" + id + "' AND pago_jornal=false");
+            return conexion.EjecutarDT(comando);
+        }
+
+        public DataTable CalcularTotal(string fecha)
+        {
+            SQLiteCommand comando = new SQLiteCommand("SELECT total_sueldo FROM Sueldo Where fecha_sueldo ='" + fecha + "'");
+            return conexion.EjecutarDT(comando);
+        }
+
     }
 
 

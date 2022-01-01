@@ -115,13 +115,11 @@ namespace VEPO.PL
                 dataGridView1.Columns[4].HeaderText = "Salida";
                 dataGridView1.Columns[5].HeaderText = "Bono";
                 dataGridView1.Columns[6].HeaderText = "Total";
-                dataGridView1.Columns[7].HeaderText = "Pago";
-                dataGridView1.Columns[8].HeaderText = "IdEmpleado";
+                dataGridView1.Columns[7].HeaderText = "IdEmpleado";
                 dataGridView1.Columns[1].Visible = false;
                 dataGridView1.Columns[2].Visible = false;
                 dataGridView1.Columns[5].Visible = false;
                 dataGridView1.Columns[7].Visible = false;
-                dataGridView1.Columns[8].Visible = false;
             }
             catch (Exception ex)
             {

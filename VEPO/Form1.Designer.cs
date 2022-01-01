@@ -32,13 +32,13 @@ namespace VEPO
             this.p_lateral = new System.Windows.Forms.Panel();
             this.btn_personal = new System.Windows.Forms.Button();
             this.btn_receta = new System.Windows.Forms.Button();
+            this.btn_producto = new System.Windows.Forms.Button();
             this.btn_insumo = new System.Windows.Forms.Button();
             this.btn_cierre = new System.Windows.Forms.Button();
             this.btn_sueldo = new System.Windows.Forms.Button();
             this.btn_jornal = new System.Windows.Forms.Button();
             this.btn_compra = new System.Windows.Forms.Button();
             this.btn_comanda = new System.Windows.Forms.Button();
-            this.btn_producto = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Fecha = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -80,6 +80,7 @@ namespace VEPO
             this.btn_personal.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_personal.Size = new System.Drawing.Size(250, 44);
             this.btn_personal.TabIndex = 12;
+            this.btn_personal.TabStop = false;
             this.btn_personal.Text = "Personal";
             this.btn_personal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_personal.UseVisualStyleBackColor = true;
@@ -98,10 +99,30 @@ namespace VEPO
             this.btn_receta.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_receta.Size = new System.Drawing.Size(250, 44);
             this.btn_receta.TabIndex = 11;
+            this.btn_receta.TabStop = false;
             this.btn_receta.Text = "Receta";
             this.btn_receta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_receta.UseVisualStyleBackColor = true;
             this.btn_receta.Click += new System.EventHandler(this.btn_receta_Click);
+            // 
+            // btn_producto
+            // 
+            this.btn_producto.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_producto.FlatAppearance.BorderSize = 0;
+            this.btn_producto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(73)))), ((int)(((byte)(0)))));
+            this.btn_producto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_producto.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_producto.ForeColor = System.Drawing.Color.White;
+            this.btn_producto.Location = new System.Drawing.Point(0, 414);
+            this.btn_producto.Name = "btn_producto";
+            this.btn_producto.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_producto.Size = new System.Drawing.Size(250, 44);
+            this.btn_producto.TabIndex = 10;
+            this.btn_producto.TabStop = false;
+            this.btn_producto.Text = "Producto";
+            this.btn_producto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_producto.UseVisualStyleBackColor = true;
+            this.btn_producto.Click += new System.EventHandler(this.btn_producto_Click);
             // 
             // btn_insumo
             // 
@@ -116,6 +137,7 @@ namespace VEPO
             this.btn_insumo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_insumo.Size = new System.Drawing.Size(250, 38);
             this.btn_insumo.TabIndex = 9;
+            this.btn_insumo.TabStop = false;
             this.btn_insumo.Text = "Insumo";
             this.btn_insumo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_insumo.UseVisualStyleBackColor = true;
@@ -134,6 +156,7 @@ namespace VEPO
             this.btn_cierre.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_cierre.Size = new System.Drawing.Size(250, 47);
             this.btn_cierre.TabIndex = 8;
+            this.btn_cierre.TabStop = false;
             this.btn_cierre.Text = "Cierre";
             this.btn_cierre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_cierre.UseVisualStyleBackColor = true;
@@ -152,6 +175,7 @@ namespace VEPO
             this.btn_sueldo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_sueldo.Size = new System.Drawing.Size(250, 44);
             this.btn_sueldo.TabIndex = 7;
+            this.btn_sueldo.TabStop = false;
             this.btn_sueldo.Text = "Sueldo";
             this.btn_sueldo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_sueldo.UseVisualStyleBackColor = true;
@@ -170,6 +194,7 @@ namespace VEPO
             this.btn_jornal.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_jornal.Size = new System.Drawing.Size(250, 47);
             this.btn_jornal.TabIndex = 6;
+            this.btn_jornal.TabStop = false;
             this.btn_jornal.Text = "Jornal";
             this.btn_jornal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_jornal.UseVisualStyleBackColor = true;
@@ -188,6 +213,7 @@ namespace VEPO
             this.btn_compra.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_compra.Size = new System.Drawing.Size(250, 42);
             this.btn_compra.TabIndex = 5;
+            this.btn_compra.TabStop = false;
             this.btn_compra.Text = "Compra";
             this.btn_compra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_compra.UseVisualStyleBackColor = true;
@@ -206,6 +232,7 @@ namespace VEPO
             this.btn_comanda.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_comanda.Size = new System.Drawing.Size(250, 46);
             this.btn_comanda.TabIndex = 3;
+            this.btn_comanda.TabStop = false;
             this.btn_comanda.Text = "Comanda";
             this.btn_comanda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_comanda.UseVisualStyleBackColor = true;
@@ -246,24 +273,6 @@ namespace VEPO
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1120, 749);
             this.panel2.TabIndex = 7;
-            // 
-            // btn_producto
-            // 
-            this.btn_producto.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_producto.FlatAppearance.BorderSize = 0;
-            this.btn_producto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(73)))), ((int)(((byte)(0)))));
-            this.btn_producto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_producto.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_producto.ForeColor = System.Drawing.Color.White;
-            this.btn_producto.Location = new System.Drawing.Point(0, 414);
-            this.btn_producto.Name = "btn_producto";
-            this.btn_producto.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_producto.Size = new System.Drawing.Size(250, 44);
-            this.btn_producto.TabIndex = 10;
-            this.btn_producto.Text = "Producto";
-            this.btn_producto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_producto.UseVisualStyleBackColor = true;
-            this.btn_producto.Click += new System.EventHandler(this.btn_producto_Click);
             // 
             // Form1
             // 

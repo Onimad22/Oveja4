@@ -57,15 +57,24 @@ namespace VEPO.DAL
             comando.Parameters.Add("@Id_productoI", DbType.Int32).Value = item.Id_productoI;
             return conexion.EjecutarComando(comando);
         }
-        public DataSet LlenarDGV()
+        public DataSet LlenarDGV(string id)
         {
-            SQLiteCommand comando = new SQLiteCommand("SELECT Id_item,Cantidad_item,Vegetariana_item,Total_item,Bono_item,Id_comandaI,Id_productoI FROM Item");
+            SQLiteCommand comando = new SQLiteCommand("SELECT nombre_producto,Cantidad_item,Total_item,id_item FROM Item INNER JOIN Producto ON id_productoI=Producto.id_producto WHERE id_comandaI='"+id+"'");
             return conexion.EjecutarConsulta(comando);
         }
 
-        
+        public DataTable LlenarDGVtotal(string id)
+        {
+            SQLiteCommand comando = new SQLiteCommand("SELECT Total_item FROM Item  WHERE id_comandaI='" + id + "'");
+            return conexion.EjecutarDT(comando);
+        }
+
+        public DataTable CalcularTotal(string fecha)
+        {
+            SQLiteCommand comando = new SQLiteCommand("SELECT total_item FROM Item INNER JOIN Comanda ON id_comandaI=Comanda.id_comanda Where fecha_comanda ='" + fecha + "'");
+            return conexion.EjecutarDT(comando);
+        }
 
     }
-
 
 }

@@ -25,7 +25,10 @@ namespace VEPO
         
         private void btn_comanda_Click(object sender, EventArgs e)
         {
-            openchildrenform(new ProductoPL());
+            DateTime dtfecha = Fecha.Value;
+            fecha = dtfecha.ToString("yyyy-MM-dd");
+
+            openchildrenform(new ComandaPL(fecha));
             Colores();
             btn_comanda.BackColor = Color.FromArgb(4, 21, 31);
             btn_comanda.ForeColor = Color.FromArgb(196, 73, 0);
@@ -35,6 +38,8 @@ namespace VEPO
 
         private void btn_compra_Click(object sender, EventArgs e)
         {
+            DateTime dtfecha = Fecha.Value;
+            fecha = dtfecha.ToString("yyyy-MM-dd");
             openchildrenform(new CompraPL(fecha));
             Colores();
             btn_compra.BackColor = Color.FromArgb(4, 21, 31);
@@ -54,7 +59,9 @@ namespace VEPO
 
         private void btn_sueldo_Click(object sender, EventArgs e)
         {
-            openchildrenform(new ProductoPL());
+            DateTime dtfecha = Fecha.Value;
+            fecha = dtfecha.ToString("yyyy-MM-dd");
+            openchildrenform(new SueldoPL(fecha));
             Colores();
             btn_sueldo.BackColor = Color.FromArgb(4, 21, 31);
             btn_sueldo.ForeColor = Color.FromArgb(196, 73, 0);
@@ -62,7 +69,9 @@ namespace VEPO
 
         private void btn_cierre_Click(object sender, EventArgs e)
         {
-            openchildrenform(new InsumoPL());
+            DateTime dtfecha = Fecha.Value;
+            fecha = dtfecha.ToString("yyyy-MM-dd");
+            openchildrenform(new CierrePL(fecha));
             Colores();
             btn_cierre.BackColor = Color.FromArgb(4, 21, 31);
             btn_cierre.ForeColor = Color.FromArgb(196, 73, 0);

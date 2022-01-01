@@ -74,6 +74,25 @@ namespace VEPO.DAL
             return conexion.EjecutarConsulta(comando);
         }
 
+        public DataTable CalcularTotal(string fecha)
+        {
+            SQLiteCommand comando = new SQLiteCommand("SELECT total_caja FROM Caja Where fecha_caja ='" + fecha + "'");
+            return conexion.EjecutarDT(comando);
+        }
+
+        public DataSet LlenarWhereFecha(string fecha)
+        {
+            SQLiteCommand comando = new SQLiteCommand("SELECT Id_caja,DiezC_caja,VeinteC_caja,CincuentaC_caja,UnB_caja,DosB_caja,CincoB_caja,DiezB_caja,VeinteB_caja,CincuentaB_caja,CienB_caja,DoscientosB_caja,Total_caja FROM Caja Where fecha_caja ='" + fecha + "'");
+            return conexion.EjecutarConsulta(comando);
+        }
+
+        internal DataTable CajaDT(string fecha)
+        {
+            SQLiteCommand comando = new SQLiteCommand("SELECT Id_caja,DiezC_caja,VeinteC_caja,CincuentaC_caja,UnB_caja,DosB_caja,CincoB_caja,DiezB_caja,VeinteB_caja,CincuentaB_caja,CienB_caja,DoscientosB_caja,Total_caja FROM Caja Where fecha_caja ='" + fecha + "'");
+            return conexion.EjecutarDT(comando);
+
+        }
+
     }
 
 }

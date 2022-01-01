@@ -55,8 +55,14 @@ namespace VEPO.DAL
 
         public DataSet LlenarWhereFecha(string fecha)
         {
-            SQLiteCommand comando = new SQLiteCommand("SELECT Id_compra,Total_compra,Fecha_compra,Id_insumoC FROM Compra Where fecha_compra ='" + fecha + "'");
+            SQLiteCommand comando = new SQLiteCommand("SELECT nombre_insumo,Id_compra,Total_compra,Fecha_compra,Id_insumoC FROM Compra INNER JOIN Insumo ON id_insumoC=Insumo.id_insumo Where fecha_compra ='" + fecha + "'");
             return conexion.EjecutarConsulta(comando);
+        }
+
+        public DataTable CalcularTotal(string fecha)
+        {
+            SQLiteCommand comando = new SQLiteCommand("SELECT total_compra FROM Compra Where fecha_compra ='" + fecha + "'");
+            return conexion.EjecutarDT(comando);
         }
 
     }

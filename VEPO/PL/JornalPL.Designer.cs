@@ -30,7 +30,7 @@ namespace VEPO.PL
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btn_agregar_esp = new System.Windows.Forms.Button();
             this.btn_borrar_esp = new System.Windows.Forms.Button();
@@ -51,14 +51,14 @@ namespace VEPO.PL
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(21)))), ((int)(((byte)(31)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.Location = new System.Drawing.Point(78, 127);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -67,6 +67,7 @@ namespace VEPO.PL
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(340, 359);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.TabStop = false;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // btn_agregar_esp
@@ -80,7 +81,7 @@ namespace VEPO.PL
             this.btn_agregar_esp.Location = new System.Drawing.Point(446, 178);
             this.btn_agregar_esp.Name = "btn_agregar_esp";
             this.btn_agregar_esp.Size = new System.Drawing.Size(114, 42);
-            this.btn_agregar_esp.TabIndex = 2;
+            this.btn_agregar_esp.TabIndex = 3;
             this.btn_agregar_esp.Text = "Agregar";
             this.btn_agregar_esp.UseVisualStyleBackColor = false;
             this.btn_agregar_esp.Click += new System.EventHandler(this.btn_agregar_esp_Click);
@@ -96,7 +97,7 @@ namespace VEPO.PL
             this.btn_borrar_esp.Location = new System.Drawing.Point(446, 368);
             this.btn_borrar_esp.Name = "btn_borrar_esp";
             this.btn_borrar_esp.Size = new System.Drawing.Size(114, 42);
-            this.btn_borrar_esp.TabIndex = 3;
+            this.btn_borrar_esp.TabIndex = 5;
             this.btn_borrar_esp.Text = "Borrar";
             this.btn_borrar_esp.UseVisualStyleBackColor = false;
             this.btn_borrar_esp.Click += new System.EventHandler(this.btn_borrar_esp_Click);
@@ -150,12 +151,13 @@ namespace VEPO.PL
             // 
             // cb_insumo
             // 
+            this.cb_insumo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_insumo.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cb_insumo.FormattingEnabled = true;
             this.cb_insumo.Location = new System.Drawing.Point(78, 78);
             this.cb_insumo.Name = "cb_insumo";
             this.cb_insumo.Size = new System.Drawing.Size(121, 28);
-            this.cb_insumo.TabIndex = 18;
+            this.cb_insumo.TabIndex = 0;
             // 
             // label3
             // 
@@ -175,7 +177,7 @@ namespace VEPO.PL
             this.txt_entrada.Mask = "00:00";
             this.txt_entrada.Name = "txt_entrada";
             this.txt_entrada.Size = new System.Drawing.Size(41, 27);
-            this.txt_entrada.TabIndex = 21;
+            this.txt_entrada.TabIndex = 1;
             this.txt_entrada.ValidatingType = typeof(System.DateTime);
             // 
             // txt_salida
@@ -185,7 +187,7 @@ namespace VEPO.PL
             this.txt_salida.Mask = "00:00";
             this.txt_salida.Name = "txt_salida";
             this.txt_salida.Size = new System.Drawing.Size(41, 27);
-            this.txt_salida.TabIndex = 22;
+            this.txt_salida.TabIndex = 2;
             this.txt_salida.ValidatingType = typeof(System.DateTime);
             // 
             // JornalPL

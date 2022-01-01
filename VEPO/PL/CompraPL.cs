@@ -20,9 +20,9 @@ namespace VEPO.PL
         public CompraPL(string Fecha)
         {
             InitializeComponent();
-            LlenarDGVcompra(Fecha);
-            CargarCBO();
             fecha = Fecha;
+            LlenarDGVcompra(fecha);
+            CargarCBO();
         }
 
         public void LimpiarEntradas()
@@ -80,10 +80,14 @@ namespace VEPO.PL
             try
             {
                 dataGridView1.DataSource = compraDAL.LlenarWhereFecha(fecha).Tables[0];
-                dataGridView1.Columns[0].HeaderText = "ID";
-                dataGridView1.Columns[1].HeaderText = "Nombre";
-                dataGridView1.Columns[2].HeaderText = "Categoria";
-                dataGridView1.Columns[0].Visible = false;
+                dataGridView1.Columns[0].HeaderText = "Insumo";
+                dataGridView1.Columns[1].HeaderText = "id";
+                dataGridView1.Columns[2].HeaderText = "Total";
+                dataGridView1.Columns[3].HeaderText = "fecha";
+                dataGridView1.Columns[4].HeaderText = "idinsumo";
+                dataGridView1.Columns[1].Visible = false;
+                dataGridView1.Columns[3].Visible = false;
+                dataGridView1.Columns[4].Visible = false;
             }
             catch (Exception ex)
             {
@@ -98,8 +102,8 @@ namespace VEPO.PL
         {
             var row = (sender as DataGridView).CurrentRow;
 
-            lb_id_compra.Text = row.Cells[0].Value.ToString();
-            cb_insumo.Text = row.Cells[1].Value.ToString();
+            lb_id_compra.Text = row.Cells[1].Value.ToString();
+            cb_insumo.Text = row.Cells[0].Value.ToString();
             txt_categoria.Text = row.Cells[2].Value.ToString();
         }
 

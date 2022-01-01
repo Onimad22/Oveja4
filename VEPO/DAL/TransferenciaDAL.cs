@@ -52,6 +52,18 @@ namespace VEPO.DAL
             return conexion.EjecutarConsulta(comando);
         }
 
+        public DataSet LlenarWhereFecha(string fecha)
+        {
+            SQLiteCommand comando = new SQLiteCommand("SELECT Id_transferencia,Total_transferencia,Fecha_transferencia FROM Transferencia Where fecha_transferencia ='" + fecha + "'");
+            return conexion.EjecutarConsulta(comando);
+        }
+
+        public DataTable CalcularTotal(string fecha)
+        {
+            SQLiteCommand comando = new SQLiteCommand("SELECT total_Transferencia FROM Transferencia Where fecha_transferencia ='" + fecha + "'");
+            return conexion.EjecutarDT(comando);
+        }
+
     }
 
 }

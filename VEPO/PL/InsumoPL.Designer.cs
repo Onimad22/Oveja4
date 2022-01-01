@@ -64,6 +64,7 @@ namespace VEPO.PL
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(340, 359);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.TabStop = false;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // btn_agregar_esp
@@ -93,7 +94,7 @@ namespace VEPO.PL
             this.btn_borrar_esp.Location = new System.Drawing.Point(446, 368);
             this.btn_borrar_esp.Name = "btn_borrar_esp";
             this.btn_borrar_esp.Size = new System.Drawing.Size(114, 42);
-            this.btn_borrar_esp.TabIndex = 3;
+            this.btn_borrar_esp.TabIndex = 4;
             this.btn_borrar_esp.Text = "Borrar";
             this.btn_borrar_esp.UseVisualStyleBackColor = false;
             this.btn_borrar_esp.Click += new System.EventHandler(this.btn_borrar_esp_Click);
@@ -109,7 +110,7 @@ namespace VEPO.PL
             this.btn_modificar_esp.Location = new System.Drawing.Point(446, 270);
             this.btn_modificar_esp.Name = "btn_modificar_esp";
             this.btn_modificar_esp.Size = new System.Drawing.Size(114, 42);
-            this.btn_modificar_esp.TabIndex = 4;
+            this.btn_modificar_esp.TabIndex = 3;
             this.btn_modificar_esp.Text = "Modificar";
             this.btn_modificar_esp.UseVisualStyleBackColor = false;
             this.btn_modificar_esp.Click += new System.EventHandler(this.btn_modificar_esp_Click);
@@ -120,7 +121,7 @@ namespace VEPO.PL
             this.txt_especie.Location = new System.Drawing.Point(78, 79);
             this.txt_especie.Name = "txt_especie";
             this.txt_especie.Size = new System.Drawing.Size(152, 27);
-            this.txt_especie.TabIndex = 8;
+            this.txt_especie.TabIndex = 0;
             // 
             // label2
             // 
@@ -148,7 +149,7 @@ namespace VEPO.PL
             this.txt_categoria.Location = new System.Drawing.Point(266, 79);
             this.txt_categoria.Name = "txt_categoria";
             this.txt_categoria.Size = new System.Drawing.Size(152, 27);
-            this.txt_categoria.TabIndex = 16;
+            this.txt_categoria.TabIndex = 1;
             // 
             // label1
             // 
