@@ -51,6 +51,7 @@ namespace VEPO
             // p_lateral
             // 
             this.p_lateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(37)))), ((int)(((byte)(52)))));
+            this.p_lateral.Controls.Add(this.Fecha);
             this.p_lateral.Controls.Add(this.btn_personal);
             this.p_lateral.Controls.Add(this.btn_receta);
             this.p_lateral.Controls.Add(this.btn_producto);
@@ -64,7 +65,7 @@ namespace VEPO
             this.p_lateral.Dock = System.Windows.Forms.DockStyle.Left;
             this.p_lateral.Location = new System.Drawing.Point(0, 0);
             this.p_lateral.Name = "p_lateral";
-            this.p_lateral.Size = new System.Drawing.Size(250, 749);
+            this.p_lateral.Size = new System.Drawing.Size(234, 749);
             this.p_lateral.TabIndex = 6;
             // 
             // btn_personal
@@ -75,10 +76,10 @@ namespace VEPO
             this.btn_personal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_personal.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_personal.ForeColor = System.Drawing.Color.White;
-            this.btn_personal.Location = new System.Drawing.Point(0, 502);
+            this.btn_personal.Location = new System.Drawing.Point(0, 696);
             this.btn_personal.Name = "btn_personal";
             this.btn_personal.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_personal.Size = new System.Drawing.Size(250, 44);
+            this.btn_personal.Size = new System.Drawing.Size(234, 66);
             this.btn_personal.TabIndex = 12;
             this.btn_personal.TabStop = false;
             this.btn_personal.Text = "Personal";
@@ -94,10 +95,10 @@ namespace VEPO
             this.btn_receta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_receta.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_receta.ForeColor = System.Drawing.Color.White;
-            this.btn_receta.Location = new System.Drawing.Point(0, 458);
+            this.btn_receta.Location = new System.Drawing.Point(0, 630);
             this.btn_receta.Name = "btn_receta";
             this.btn_receta.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_receta.Size = new System.Drawing.Size(250, 44);
+            this.btn_receta.Size = new System.Drawing.Size(234, 66);
             this.btn_receta.TabIndex = 11;
             this.btn_receta.TabStop = false;
             this.btn_receta.Text = "Receta";
@@ -113,10 +114,10 @@ namespace VEPO
             this.btn_producto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_producto.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_producto.ForeColor = System.Drawing.Color.White;
-            this.btn_producto.Location = new System.Drawing.Point(0, 414);
+            this.btn_producto.Location = new System.Drawing.Point(0, 564);
             this.btn_producto.Name = "btn_producto";
             this.btn_producto.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_producto.Size = new System.Drawing.Size(250, 44);
+            this.btn_producto.Size = new System.Drawing.Size(234, 66);
             this.btn_producto.TabIndex = 10;
             this.btn_producto.TabStop = false;
             this.btn_producto.Text = "Producto";
@@ -132,10 +133,10 @@ namespace VEPO
             this.btn_insumo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_insumo.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_insumo.ForeColor = System.Drawing.Color.White;
-            this.btn_insumo.Location = new System.Drawing.Point(0, 376);
+            this.btn_insumo.Location = new System.Drawing.Point(0, 504);
             this.btn_insumo.Name = "btn_insumo";
             this.btn_insumo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_insumo.Size = new System.Drawing.Size(250, 38);
+            this.btn_insumo.Size = new System.Drawing.Size(234, 60);
             this.btn_insumo.TabIndex = 9;
             this.btn_insumo.TabStop = false;
             this.btn_insumo.Text = "Insumo";
@@ -151,10 +152,10 @@ namespace VEPO
             this.btn_cierre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cierre.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_cierre.ForeColor = System.Drawing.Color.White;
-            this.btn_cierre.Location = new System.Drawing.Point(0, 329);
+            this.btn_cierre.Location = new System.Drawing.Point(0, 435);
             this.btn_cierre.Name = "btn_cierre";
             this.btn_cierre.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_cierre.Size = new System.Drawing.Size(250, 47);
+            this.btn_cierre.Size = new System.Drawing.Size(234, 69);
             this.btn_cierre.TabIndex = 8;
             this.btn_cierre.TabStop = false;
             this.btn_cierre.Text = "Cierre";
@@ -170,10 +171,10 @@ namespace VEPO
             this.btn_sueldo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_sueldo.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_sueldo.ForeColor = System.Drawing.Color.White;
-            this.btn_sueldo.Location = new System.Drawing.Point(0, 285);
+            this.btn_sueldo.Location = new System.Drawing.Point(0, 369);
             this.btn_sueldo.Name = "btn_sueldo";
             this.btn_sueldo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_sueldo.Size = new System.Drawing.Size(250, 44);
+            this.btn_sueldo.Size = new System.Drawing.Size(234, 66);
             this.btn_sueldo.TabIndex = 7;
             this.btn_sueldo.TabStop = false;
             this.btn_sueldo.Text = "Sueldo";
@@ -189,10 +190,10 @@ namespace VEPO
             this.btn_jornal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_jornal.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_jornal.ForeColor = System.Drawing.Color.White;
-            this.btn_jornal.Location = new System.Drawing.Point(0, 238);
+            this.btn_jornal.Location = new System.Drawing.Point(0, 300);
             this.btn_jornal.Name = "btn_jornal";
             this.btn_jornal.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_jornal.Size = new System.Drawing.Size(250, 47);
+            this.btn_jornal.Size = new System.Drawing.Size(234, 69);
             this.btn_jornal.TabIndex = 6;
             this.btn_jornal.TabStop = false;
             this.btn_jornal.Text = "Jornal";
@@ -208,10 +209,10 @@ namespace VEPO
             this.btn_compra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_compra.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_compra.ForeColor = System.Drawing.Color.White;
-            this.btn_compra.Location = new System.Drawing.Point(0, 196);
+            this.btn_compra.Location = new System.Drawing.Point(0, 236);
             this.btn_compra.Name = "btn_compra";
             this.btn_compra.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_compra.Size = new System.Drawing.Size(250, 42);
+            this.btn_compra.Size = new System.Drawing.Size(234, 64);
             this.btn_compra.TabIndex = 5;
             this.btn_compra.TabStop = false;
             this.btn_compra.Text = "Compra";
@@ -227,10 +228,10 @@ namespace VEPO
             this.btn_comanda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_comanda.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_comanda.ForeColor = System.Drawing.Color.White;
-            this.btn_comanda.Location = new System.Drawing.Point(0, 150);
+            this.btn_comanda.Location = new System.Drawing.Point(0, 168);
             this.btn_comanda.Name = "btn_comanda";
             this.btn_comanda.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_comanda.Size = new System.Drawing.Size(250, 46);
+            this.btn_comanda.Size = new System.Drawing.Size(234, 68);
             this.btn_comanda.TabIndex = 3;
             this.btn_comanda.TabStop = false;
             this.btn_comanda.Text = "Comanda";
@@ -240,27 +241,27 @@ namespace VEPO
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.Fecha);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(250, 150);
+            this.panel1.Size = new System.Drawing.Size(234, 168);
             this.panel1.TabIndex = 2;
             // 
             // Fecha
             // 
-            this.Fecha.Location = new System.Drawing.Point(0, 124);
+            this.Fecha.Location = new System.Drawing.Point(0, 145);
             this.Fecha.Name = "Fecha";
-            this.Fecha.Size = new System.Drawing.Size(247, 23);
+            this.Fecha.Size = new System.Drawing.Size(234, 23);
             this.Fecha.TabIndex = 0;
+            this.Fecha.TabStop = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::VEPO.Properties.Resources.elmana;
+            this.pictureBox1.Image = global::VEPO.Properties.Resources.logo;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(250, 150);
+            this.pictureBox1.Size = new System.Drawing.Size(234, 168);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -269,9 +270,9 @@ namespace VEPO
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(21)))), ((int)(((byte)(31)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(250, 0);
+            this.panel2.Location = new System.Drawing.Point(234, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1120, 749);
+            this.panel2.Size = new System.Drawing.Size(1136, 749);
             this.panel2.TabIndex = 7;
             // 
             // Form1

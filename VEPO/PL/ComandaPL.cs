@@ -355,6 +355,18 @@ namespace VEPO.PL
             cb_insumo.ValueMember = "Id_producto";// el valor de ese campo en el CB sera este
             cb_insumo.SelectedItem = null;
 
+            DataTable dt=productoDAL.LlenarCBO();
+            AutoCompleteStringCollection collection = new AutoCompleteStringCollection();
+            foreach (DataRow row in dt.Rows)
+            {
+                collection.Add(Convert.ToString(row[0]));
+            }
+
+
+            //CARGO LA LISTA PARA EL AUTOCOMPLEATADO
+            cb_insumo.AutoCompleteMode=AutoCompleteMode.Suggest;
+            cb_insumo.AutoCompleteSource=AutoCompleteSource.CustomSource;
+            cb_insumo.AutoCompleteCustomSource= collection;
         }
 
         #endregion

@@ -62,5 +62,11 @@ namespace VEPO.DAL
             return conexion.EjecutarConsulta(comando);
         }
 
+        public DataTable LlenarCBO()
+        {
+            SQLiteCommand comando = new SQLiteCommand("SELECT nombre_producto FROM Producto");
+            return conexion.EjecutarDT(comando);
+        }
+
     }
 }

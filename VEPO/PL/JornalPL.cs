@@ -33,6 +33,9 @@ namespace VEPO.PL
             lb_id_compra.Text = "0";
         }
 
+        
+
+
         private JornalBLL ExtraerDatos()
         {
             jornalBLL = new JornalBLL();
@@ -50,11 +53,11 @@ namespace VEPO.PL
             }
             jornalBLL.Bono_jornal= bono;
 
-
-
+                
             int.TryParse(cb_insumo.SelectedValue.ToString(), out int empleado);
-            jornalBLL.Id_empleadoJ = empleado;
 
+            jornalBLL.Id_empleadoJ = empleado;
+            
             
             DataTable dtJ = jornalDAL.CalcularJornal(empleado);
             double convenio = 0;
