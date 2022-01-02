@@ -40,6 +40,7 @@ namespace VEPO.PL
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.txt_total = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -161,12 +162,20 @@ namespace VEPO.PL
             this.label3.TabIndex = 21;
             this.label3.Text = "Jornales";
             // 
+            // txt_total
+            // 
+            this.txt_total.Location = new System.Drawing.Point(260, 504);
+            this.txt_total.Name = "txt_total";
+            this.txt_total.Size = new System.Drawing.Size(100, 23);
+            this.txt_total.TabIndex = 22;
+            // 
             // SueldoPL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(21)))), ((int)(((byte)(31)))));
             this.ClientSize = new System.Drawing.Size(1132, 708);
+            this.Controls.Add(this.txt_total);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView2);
@@ -194,5 +203,6 @@ namespace VEPO.PL
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txt_total;
     }
 }

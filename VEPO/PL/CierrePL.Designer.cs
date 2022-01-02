@@ -29,9 +29,8 @@ namespace VEPO.PL
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btn_agregar_esp = new System.Windows.Forms.Button();
             this.btn_borrar_esp = new System.Windows.Forms.Button();
@@ -64,8 +63,12 @@ namespace VEPO.PL
             this.txt_200b = new System.Windows.Forms.TextBox();
             this.txt_total_caja = new System.Windows.Forms.TextBox();
             this.lb_id_caja = new System.Windows.Forms.Label();
+            this.txt_bono = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -74,15 +77,7 @@ namespace VEPO.PL
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(21)))), ((int)(((byte)(31)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.Location = new System.Drawing.Point(65, 484);
+            this.dataGridView1.Location = new System.Drawing.Point(54, 115);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
@@ -101,7 +96,7 @@ namespace VEPO.PL
             this.btn_agregar_esp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_agregar_esp.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_agregar_esp.ForeColor = System.Drawing.Color.White;
-            this.btn_agregar_esp.Location = new System.Drawing.Point(213, 484);
+            this.btn_agregar_esp.Location = new System.Drawing.Point(202, 115);
             this.btn_agregar_esp.Name = "btn_agregar_esp";
             this.btn_agregar_esp.Size = new System.Drawing.Size(114, 42);
             this.btn_agregar_esp.TabIndex = 17;
@@ -117,7 +112,7 @@ namespace VEPO.PL
             this.btn_borrar_esp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_borrar_esp.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_borrar_esp.ForeColor = System.Drawing.Color.White;
-            this.btn_borrar_esp.Location = new System.Drawing.Point(213, 636);
+            this.btn_borrar_esp.Location = new System.Drawing.Point(202, 267);
             this.btn_borrar_esp.Name = "btn_borrar_esp";
             this.btn_borrar_esp.Size = new System.Drawing.Size(114, 42);
             this.btn_borrar_esp.TabIndex = 19;
@@ -133,7 +128,7 @@ namespace VEPO.PL
             this.btn_modificar_esp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_modificar_esp.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_modificar_esp.ForeColor = System.Drawing.Color.White;
-            this.btn_modificar_esp.Location = new System.Drawing.Point(213, 563);
+            this.btn_modificar_esp.Location = new System.Drawing.Point(202, 194);
             this.btn_modificar_esp.Name = "btn_modificar_esp";
             this.btn_modificar_esp.Size = new System.Drawing.Size(114, 42);
             this.btn_modificar_esp.TabIndex = 18;
@@ -144,16 +139,17 @@ namespace VEPO.PL
             // lb_id_transferencia
             // 
             this.lb_id_transferencia.AutoSize = true;
-            this.lb_id_transferencia.Location = new System.Drawing.Point(36, 448);
+            this.lb_id_transferencia.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lb_id_transferencia.Location = new System.Drawing.Point(25, 79);
             this.lb_id_transferencia.Name = "lb_id_transferencia";
-            this.lb_id_transferencia.Size = new System.Drawing.Size(13, 15);
+            this.lb_id_transferencia.Size = new System.Drawing.Size(19, 21);
             this.lb_id_transferencia.TabIndex = 15;
             this.lb_id_transferencia.Text = "0";
             // 
             // txt_valor_trans
             // 
             this.txt_valor_trans.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_valor_trans.Location = new System.Drawing.Point(66, 441);
+            this.txt_valor_trans.Location = new System.Drawing.Point(55, 72);
             this.txt_valor_trans.Name = "txt_valor_trans";
             this.txt_valor_trans.Size = new System.Drawing.Size(74, 27);
             this.txt_valor_trans.TabIndex = 16;
@@ -163,7 +159,7 @@ namespace VEPO.PL
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(66, 418);
+            this.label1.Location = new System.Drawing.Point(55, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 20);
             this.label1.TabIndex = 17;
@@ -295,23 +291,23 @@ namespace VEPO.PL
             this.dataGridView2.AllowUserToAddRows = false;
             this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(21)))), ((int)(((byte)(31)))));
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView2.Location = new System.Drawing.Point(418, 103);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
@@ -429,12 +425,54 @@ namespace VEPO.PL
             this.lb_id_caja.TabIndex = 45;
             this.lb_id_caja.Text = "0";
             // 
+            // txt_bono
+            // 
+            this.txt_bono.Enabled = false;
+            this.txt_bono.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_bono.Location = new System.Drawing.Point(118, 459);
+            this.txt_bono.Name = "txt_bono";
+            this.txt_bono.Size = new System.Drawing.Size(74, 27);
+            this.txt_bono.TabIndex = 47;
+            this.txt_bono.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(64, 466);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(51, 20);
+            this.label2.TabIndex = 46;
+            this.label2.Text = "BONO";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txt_valor_trans);
+            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.btn_agregar_esp);
+            this.groupBox1.Controls.Add(this.btn_borrar_esp);
+            this.groupBox1.Controls.Add(this.btn_modificar_esp);
+            this.groupBox1.Controls.Add(this.lb_id_transferencia);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox1.Location = new System.Drawing.Point(473, 344);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(419, 334);
+            this.groupBox1.TabIndex = 48;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "TRANSFERENCIAS";
+            // 
             // CierrePL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(21)))), ((int)(((byte)(31)))));
             this.ClientSize = new System.Drawing.Size(1132, 708);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.txt_bono);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lb_id_caja);
             this.Controls.Add(this.txt_total_caja);
             this.Controls.Add(this.txt_200b);
@@ -460,17 +498,12 @@ namespace VEPO.PL
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txt_valor_trans);
-            this.Controls.Add(this.lb_id_transferencia);
-            this.Controls.Add(this.btn_modificar_esp);
-            this.Controls.Add(this.btn_borrar_esp);
-            this.Controls.Add(this.btn_agregar_esp);
-            this.Controls.Add(this.dataGridView1);
             this.Name = "CierrePL";
             this.Text = "especiePL";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -510,5 +543,8 @@ namespace VEPO.PL
         private System.Windows.Forms.TextBox txt_200b;
         private System.Windows.Forms.TextBox txt_total_caja;
         private System.Windows.Forms.Label lb_id_caja;
+        private System.Windows.Forms.TextBox txt_bono;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

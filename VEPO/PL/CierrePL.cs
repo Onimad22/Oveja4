@@ -234,6 +234,15 @@ namespace VEPO.PL
 
         public void Totales()
         {
+            JornalDAL jornalDAL = new JornalDAL();
+            DataTable dtB = jornalDAL.CalcularBono(fecha);
+            double totalB = 0;
+            foreach (DataRow dr in dtB.Rows)
+            {
+                totalB += Convert.ToDouble(dr[0]);
+            }
+            txt_bono.Text = Convert.ToString(totalB);
+
             ItemDAL itemDAL = new ItemDAL();
             DataTable dtV = itemDAL.CalcularTotal(fecha);
             double totalV = 0;

@@ -72,6 +72,7 @@ namespace VEPO.PL
 
             LlenarDGVsueldo(empleado);
             LlenarDGVjornal(empleado);
+            txt_total.Text = "";
         }
 
 
@@ -138,6 +139,9 @@ namespace VEPO.PL
 
             LlenarDGVjornal(empleado);
             LlenarDGVsueldo(empleado);
+
+            sueldoBLL = ExtraerDatos();
+            txt_total.Text = Convert.ToString(sueldoBLL.Total_sueldo);
         }
 
         #endregion
