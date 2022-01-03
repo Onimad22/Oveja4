@@ -151,9 +151,18 @@ namespace VEPO.PL
             itemDAL.Eliminar(ExtraerDatosItem());
 
             CalcularTotal();
+
+            
+
             LlenarDGVItem();
             LlenarDGVabierta();
             LlenarDGVcerrada();
+            if (txt_total.Text == "0")
+            {
+                comandaDAL.EliminarComanda(Convert.ToInt32(lb_id_comanda.Text));
+                lb_id_comanda.Text = "0";
+                txt_mesa.Text = "";
+            }
             LimpiarEntradas();
             cb_insumo.Focus();
         }
@@ -401,6 +410,7 @@ namespace VEPO.PL
 
         #endregion
 
+        //boton de nueva comanda
         private void button1_Click(object sender, EventArgs e)
         {
             LimpiarEntradas();

@@ -52,27 +52,31 @@ namespace VEPO.PL
         #region CRUD
         private void btn_agregar_esp_Click(object sender, EventArgs e)
         {
-            JornalBLL jornalBLL;
-            jornalBLL = new JornalBLL();    
-            int.TryParse(cb_insumo.SelectedValue.ToString(), out int empleado);
-            
-            sueldoDAL = new SueldoDAL();
-            sueldoDAL.Agregar(ExtraerDatos());
-
-            // aqui pongo en true al campo "pago" de la tabla Jornal
-            
-            DataTable dt = sueldoDAL.JornalesaPagar(empleado);
-            foreach (DataRow dr in dt.Rows)
+            if (MessageBox.Show("¿Estas seguro de completar la accion?", "Message", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                
-                jornalBLL.Id_jornal= Convert.ToInt32(dr[0]);
+                JornalBLL jornalBLL;
+                jornalBLL = new JornalBLL();
+                int.TryParse(cb_insumo.SelectedValue.ToString(), out int empleado);
 
-                sueldoDAL.ModificarPago(jornalBLL);
+                sueldoDAL = new SueldoDAL();
+                sueldoDAL.Agregar(ExtraerDatos());
+
+                // aqui pongo en true al campo "pago" de la tabla Jornal
+
+                DataTable dt = sueldoDAL.JornalesaPagar(empleado);
+                foreach (DataRow dr in dt.Rows)
+                {
+
+                    jornalBLL.Id_jornal = Convert.ToInt32(dr[0]);
+
+                    sueldoDAL.ModificarPago(jornalBLL);
+                }
+
+                LlenarDGVsueldo(empleado);
+                LlenarDGVjornal(empleado);
+                txt_total.Text = "";
             }
-
-            LlenarDGVsueldo(empleado);
-            LlenarDGVjornal(empleado);
-            txt_total.Text = "";
+                                       
         }
 
 

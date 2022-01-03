@@ -44,6 +44,13 @@ namespace VEPO.DAL
             return conexion.EjecutarComando(comando);
         }
 
+        public bool EliminarComanda(int id)
+        {
+
+            SQLiteCommand comando = new SQLiteCommand("DELETE FROM Comanda WHERE Id_comanda='"+id+"'");
+            return conexion.EjecutarComando(comando);
+        }
+
         internal DataTable CalcularPrecio(int id)
         {
             SQLiteCommand comando = new SQLiteCommand("SELECT PrecioLocal_producto,PrecioDelivery_producto,bono_producto FROM Producto Where id_producto = '" + id + "'");
