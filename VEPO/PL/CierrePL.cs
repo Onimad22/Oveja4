@@ -287,7 +287,7 @@ namespace VEPO.PL
                 totalCA += Convert.ToDouble(dr[0]);
             }
 
-            
+
             DataTable dtCH = cajaDAL.CalcularTotal(fecha);
             double totalCH = 0;
             foreach (DataRow dr in dtCH.Rows)
@@ -295,7 +295,7 @@ namespace VEPO.PL
                 totalCH += Convert.ToDouble(dr[0]);
             }
 
-            double cierre = totalCH - totalCA + totalV - totalC + totalT;
+            double cierre = totalCH - (totalCA + totalV - totalC - totalS-totalT);
 
             txt_cierre.Text = Convert.ToString(cierre);
 
