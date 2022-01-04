@@ -30,6 +30,7 @@ namespace VEPO
         private void InitializeComponent()
         {
             this.p_lateral = new System.Windows.Forms.Panel();
+            this.Fecha = new System.Windows.Forms.DateTimePicker();
             this.btn_personal = new System.Windows.Forms.Button();
             this.btn_receta = new System.Windows.Forms.Button();
             this.btn_producto = new System.Windows.Forms.Button();
@@ -40,9 +41,9 @@ namespace VEPO
             this.btn_compra = new System.Windows.Forms.Button();
             this.btn_comanda = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Fecha = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtClave = new System.Windows.Forms.TextBox();
             this.p_lateral.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -67,6 +68,15 @@ namespace VEPO
             this.p_lateral.Name = "p_lateral";
             this.p_lateral.Size = new System.Drawing.Size(234, 749);
             this.p_lateral.TabIndex = 6;
+            // 
+            // Fecha
+            // 
+            this.Fecha.Location = new System.Drawing.Point(0, 145);
+            this.Fecha.Name = "Fecha";
+            this.Fecha.Size = new System.Drawing.Size(234, 23);
+            this.Fecha.TabIndex = 0;
+            this.Fecha.TabStop = false;
+            this.Fecha.ValueChanged += new System.EventHandler(this.Fecha_ValueChanged);
             // 
             // btn_personal
             // 
@@ -241,20 +251,13 @@ namespace VEPO
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.txtClave);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(234, 168);
             this.panel1.TabIndex = 2;
-            // 
-            // Fecha
-            // 
-            this.Fecha.Location = new System.Drawing.Point(0, 145);
-            this.Fecha.Name = "Fecha";
-            this.Fecha.Size = new System.Drawing.Size(234, 23);
-            this.Fecha.TabIndex = 0;
-            this.Fecha.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -275,6 +278,14 @@ namespace VEPO
             this.panel2.Size = new System.Drawing.Size(1136, 749);
             this.panel2.TabIndex = 7;
             // 
+            // txtClave
+            // 
+            this.txtClave.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtClave.Location = new System.Drawing.Point(3, 0);
+            this.txtClave.Name = "txtClave";
+            this.txtClave.Size = new System.Drawing.Size(78, 23);
+            this.txtClave.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -282,12 +293,12 @@ namespace VEPO
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.p_lateral);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
             this.Text = "El Mana";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.p_lateral.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -308,6 +319,7 @@ namespace VEPO
         private System.Windows.Forms.Button btn_personal;
         private System.Windows.Forms.Button btn_receta;
         private System.Windows.Forms.Button btn_producto;
+        private System.Windows.Forms.TextBox txtClave;
     }
 }
 

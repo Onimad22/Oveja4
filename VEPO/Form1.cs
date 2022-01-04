@@ -157,7 +157,17 @@ namespace VEPO
 
         }
 
-       
+        private void Fecha_ValueChanged(object sender, EventArgs e)
+        {
+            if (txtClave.Text == "1793")
+            {
+                txtClave.Text = "";
+            }
+            else
+            {
+                Fecha.Value = DateTime.Today;
+            }
+        }
     }
 }
 
